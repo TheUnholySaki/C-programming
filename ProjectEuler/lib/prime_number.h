@@ -1,3 +1,8 @@
+/*==================================================
+LIB:
+
+
+====================================================*/
 #ifndef __PRIME_NUMBER_H
 #define __PRIME_NUMBER_H
 
@@ -9,14 +14,14 @@
 typedef uint64_t *prime_num_arr_t;
 typedef uint64_t prime_num;
 
-bool is_prime_below_32bit(uint32_t num);
+bool lib_is_prime_below_32bit(uint32_t num);
 
 /**
  * @def find prime number using trial division algorithm
  * @var (uint64_t) lim
  * @return uint32_t results
  */
-prime_num_arr_t prime_num_trial_division(uint64_t lim);
+prime_num_arr_t lib_prime_num_trial_division(uint64_t lim);
 
 
 
@@ -37,7 +42,7 @@ prime_num_arr_t prime_num_sieve_of_eratosthenes(uint64_t lim);
  */
 prime_num_arr_t prime_num_dijkstra(uint64_t lim);
 
-bool is_prime_below_32bit(uint32_t num)
+bool lib_is_prime_below_32bit(uint32_t num)
 {
     // preliminary
     if (num <= 1) return false;
@@ -53,7 +58,7 @@ bool is_prime_below_32bit(uint32_t num)
     return true;
 }
 
-prime_num_arr_t prime_num_trial_division(uint64_t lim)
+prime_num_arr_t lib_prime_num_trial_division(uint64_t lim)
 {
     prime_num_arr_t array = NULL; // Start with a NULL pointer
     int i = 0;                    // Current number of elements
