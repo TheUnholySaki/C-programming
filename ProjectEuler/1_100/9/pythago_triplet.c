@@ -1,5 +1,5 @@
 /*
-dif between sum of sqr and sqr of sum for first 100 natrual number
+pythagod triplet that a + b +c = 1000
 */
 #include <stdio.h>
 #include <stdint.h>
@@ -40,6 +40,8 @@ int main()
     /* ========================END========================*/
     double execution_time = stop_time(&start, &frequency);
     printf("Execution time: %.7f seconds\n", execution_time);
+    char *date_str = lib_get_current_date();
+    printf("Solution date: %s\n", date_str);
 
     /* ================PLACE YOUR PRINT OUT HERE============*/
     printf("THE END\n");
