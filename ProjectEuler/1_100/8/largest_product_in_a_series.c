@@ -1,5 +1,5 @@
 /*
-dif between sum of sqr and sqr of sum for first 100 natrual number
+largest product of 13 consecutive number in a series
 */
 #include <stdio.h>
 #include <stdint.h>
